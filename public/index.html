@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website Title</title>
+  <title>Your Website Title - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,7 +13,7 @@
       <a href="index.html" class="text-2xl font-bold text-gray-800">Your Name</a>
       <div class="space-x-4">
         <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-        <a href="blog.html" class="text-gray-600 hover:text-blue-500">Blog</a>
+        <a href="blog/index.html" class="text-gray-600 hover:text-blue-500">Blog</a>
         <a href="resume.html" class="text-gray-600 hover:text-blue-500">Resume</a>
       </div>
     </nav>
@@ -21,7 +21,21 @@
   <main class="container mx-auto px-4 py-8">
     <section class="space-y-6">
       <h1 class="text-4xl font-bold text-gray-800">Welcome to My Website</h1>
-      <p class="text-lg text-gray-600">Here, you can find my blog and my resume.</p>
+      <p class="text-gray-600">
+        This is a simple static website built using HTML, CSS, and JavaScript. The site includes a blog section where I share my thoughts and experiences, as well as my resume.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white shadow-md p-8 rounded-md">
+          <h2 class="text-2xl font-bold text-gray-800">My Blog</h2>
+          <p class="text-gray-600">Visit my blog to read my latest articles and learn about my experiences.</p>
+          <a href="blog/index.html" class="inline-block mt-4 bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Go to Blog</a>
+        </div>
+        <div class="bg-white shadow-md p-8 rounded-md">
+          <h2 class="text-2xl font-bold text-gray-800">My Resume</h2>
+          <p class="text-gray-600">Check out my resume to learn more about my skills and professional experience.</p>
+          <a href="resume.html" class="inline-block mt-4 bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">View Resume</a>
+        </div>
+      </div>
     </section>
   </main>
   <script src="main.js"></script>
